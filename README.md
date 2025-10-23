@@ -1,253 +1,430 @@
-# 🌊 Underwater Portfolio
+# Underwater Portfolio - Anshika Agrawal
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge)](https://anshika01-agrawal.github.io/My-portfolio/)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+Portfolio Status: Live
+HTML5 | CSS3 | JavaScript
 
-> An immersive underwater-themed portfolio website with interactive bubble animations, particle effects, and beautiful ocean aesthetics.
+An immersive underwater-themed portfolio showcasing my journey in Electronics, Robotics, AI/ML & Open Source
 
-## 🚀 Live Demo
-
-**[View Portfolio →](https://anshika01-agrawal.github.io/My-portfolio/)**
+View Live Portfolio: https://anshika01-agrawal.github.io/My-portfolio/
 
 ---
 
-## 👩‍💻 About Me
+## About Me
 
-Hi! I'm *Anshika Agrawal*, a Computer Science student passionate about technology and innovation.
+Hi! I'm Anshika Agrawal, a 3rd-year Electronics & Telecommunication Engineering student at IET-DAVV Indore, passionate about:
 
-### 🎯 Areas of Interest
-- 🤖 Robotics & ROS Development
-- ☁ Cloud Computing (Oracle Cloud, Kubernetes)
-- 💻 Software Development
-- 🔧 Embedded Systems
-- 🌐 Open Source Contribution
-
----
-
-## ✨ Portfolio Features
-
-This portfolio showcases my journey with stunning visual effects:
-
-| Feature | Description |
-|---------|-------------|
-| 🫧 Interactive Bubbles | Click anywhere to create realistic underwater bubbles |
-| 🌊 Animated Ocean | Dynamic gradient background with wave animations |
-| 💎 Glass Morphism | Modern frosted glass card effects |
-| 🐟 Particle System | 80+ floating particles using Particles.js |
-| 🎨 Neon Glows | Beautiful glowing text and borders |
-| 📱 Fully Responsive | Perfect on all devices and screen sizes |
-| ⚡ Smooth Animations | CSS & JavaScript powered transitions |
-| 🌈 Gradient Effects | Dynamic color-shifting backgrounds |
+- Robotics - ROS/ROS2, Autonomous Systems, Navigation
+- Drones & Aeromodelling - Autonomous Drones, RC Planes
+- AI/ML Development - Machine Learning, Data Analysis
+- Cloud Computing - Kubernetes, Docker, Oracle Cloud
+- Full-Stack Development - Frontend, Backend, Web Apps
+- Open Source - GSSOC'25 Contributor, Active GitHub Developer
+- Design - Graphic Design, T-shirt Design, Branding
 
 ---
 
-## 🛠 Built With
+## Portfolio Features
 
-*Frontend Technologies:*
-- HTML5 - Semantic structure
-- CSS3 - Advanced styling and animations
+Visual Features:
+- Interactive Bubbles - Particles.js powered animations
+- Animated Ocean Waves - Dynamic gradient effects
+- Glass Morphism Design - Modern frosted glass cards
+- Neon Glow Effects - Beautiful glowing text
+- Smooth Animations - CSS transitions
+- Fully Responsive - Works on all devices
+
+Content Sections:
+1. Hero Section - Introduction with animated background
+2. Professional Experience - Siemens, Robotics, AI/ML, GSSOC'25
+3. College Journey - Year-wise (1st to 3rd year)
+4. Featured Projects - Data-Manthan, e-Yantra, Drones, VoIP
+5. Achievements - Certifications, Competitions, Hackathons
+6. Technical Skills - Programming, Robotics, AI/ML, Cloud
+7. Contact - Social links and contact form
+
+---
+
+## Technologies Used
+
+Frontend:
+- HTML5 - Semantic markup and structure
+- CSS3 - Advanced animations, Glass Morphism
 - JavaScript - Interactive functionality
-- [Particles.js](https://vincentgarreau.com/particles.js/) - Particle system
-- [Font Awesome](https://fontawesome.com/) - Icons
-- [Google Fonts](https://fonts.google.com/) - Poppins font
 
-*Hosting:*
-- GitHub Pages - Free static site hosting
+Libraries:
+- Particles.js - Bubble animations
+- Font Awesome - Icons
+- Google Fonts - Typography
 
----
-
-## 📂 Project Structure
----
-
-## 💼 Experience
-
-### Commercial Project Manager | Siemens
-*2024 - Present*
-- Leading commercial projects with cross-functional teams
-- Managing technological solutions delivery
-- Coordinating between technical and business stakeholders
-
-### Robotics Developer | eBot Navigation Project
-*October 2025*
-- Developed autonomous navigation system using ROS
-- Implemented waypoint tracking and obstacle avoidance
-- Worked with sensors and real-time control systems
-
-### Open Source Contributor
-*2025*
-- Active contributions to GitHub projects
-- ShopSmart e-commerce platform
-- Stock management systems
+Deployment:
+- GitHub Pages - Hosting
+- Git - Version control
 
 ---
 
-## 🚀 Featured Projects
+## Project Structure
 
-### 1. 🤖 eBot Navigation System
-Autonomous robot navigation using ROS framework with real-time obstacle detection.
+My-portfolio/
+├── index.html          Main HTML file
+├── style.css           Styling with animations
+├── script.js           JavaScript functionality
+├── README.md           Documentation
+└── images/             Images folder
+    └── your-photo.jpg  Profile picture
 
-*Tech Stack:* ROS | Python | OpenCV | Robotics  
-*GitHub:* [View Project →](https://github.com/anshika01-agrawal)
+---
 
-### 2. 📞 VoIP Call Tracing Solution
-24-hour hackathon project for network traffic analysis and VoIP metadata extraction.
+## Getting Started
 
-*Tech Stack:* Python | Networking | Wireshark | VoIP  
-*Achievement:* Hackathon Participant
+Step 1: Clone the Repository
 
-### 3. ⚡ AVR Microcontroller Projects
-Embedded systems development with sensor integration and IoT applications.
+git clone https://github.com/anshika01-agrawal/My-portfolio.git
 
-*Tech Stack:* Embedded C | AVR | Sensors | IoT  
-*Focus:* Real-time control systems
+Step 2: Navigate to Folder
 
-### 4. ☁ Cloud Infrastructure Work
+cd My-portfolio
+
+Step 3: Open in Browser
+
+Option A - Direct Open:
+- Windows: Double-click index.html
+- Mac: Right-click index.html → Open With → Browser
+- Linux: Right-click index.html → Open With → Browser
+
+Option B - VS Code Live Server:
+- Open VS Code
+- Open My-portfolio folder
+- Right-click index.html
+- Select "Open with Live Server"
+
+Option C - Python Server:
+- Open terminal in My-portfolio folder
+- Run: python -m http.server 8000
+- Open browser: http://localhost:8000
+
+---
+
+## Professional Experience
+
+1. Commercial Project Manager | Siemens
+Certified Internship | 2024-2025
+- Led cross-functional teams for commercial projects
+- Managed technological solution delivery
+- Coordinated technical and business stakeholders
+
+2. Robotics Developer | e-Yantra IIT Bombay
+Team Captain | 2025 - Present
+- Leading autonomous robotics project using ROS
+- Managing team for IIT Bombay's e-Yantra Competition
+- Implementing navigation and obstacle avoidance
+
+3. AI/ML Developer | Data-Manthan
+SIH 2025 Project | 2025
+- Developing machine learning models for data analysis
+- Selected in Smart India Hackathon Internal Round
+- Focus on data-driven solutions
+
+4. Open Source Contributor | GSSOC'25
+Active Contributor | 2025
+- Contributing to GirlScript Summer of Code 2025
+- Multiple GitHub project contributions
+- Collaborative development learning
+
+---
+
+## Featured Projects
+
+1. Data-Manthan (SIH 2025)
+Smart India Hackathon Project
+AI/ML-based data analysis solution for real-world problems. Selected in SIH Internal Round.
+Tech Stack: Python, Machine Learning, Data Analysis
+GitHub: https://github.com/anshika01-agrawal/Data-Manthan
+
+2. e-Yantra Robotics (IIT Bombay)
+Team Captain | Autonomous Navigation
+Leading team in IIT Bombay's prestigious robotics competition. Building autonomous robots with ROS.
+Tech Stack: ROS/ROS2, Python, OpenCV, Navigation
+Status: Ongoing Competition
+
+3. VoIP Call Tracing Solution
+24-Hour Hackathon | Network Analysis
+Network traffic analysis and VoIP metadata extraction tool developed in 24-hour hackathon.
+Tech Stack: Python, Networking, Wireshark, VoIP
+Achievement: Hackathon Participant (August 2025)
+
+4. Autonomous Drone Systems
+DDC Aerothon Competition
+Built autonomous drones with advanced navigation for national-level competition in Bangalore.
+Tech Stack: Drones, IoT, Autonomous Systems
+Achievement: National Level Participant
+
+5. RC Plane Design & Development
+SEAIndia DDC & IIT Bombay Techfest
+Designed and built Regular & Micro category RC planes for national competitions.
+Tech Stack: Aeromodelling, Design, Engineering
+Competitions: Chennai (SEAIndia), Mumbai (IIT Bombay)
+
+6. AVR Microcontroller Projects
+Embedded Systems & IoT
+Various embedded systems projects with sensor integration and real-time control.
+Tech Stack: Embedded C, AVR, Sensors, IoT
+Focus: Microcontroller Programming
+
+7. Cloud Infrastructure Work
+Oracle Cloud Kubernetes
 Containerized applications and Kubernetes orchestration on Oracle Cloud.
-
-*Tech Stack:* Kubernetes | Docker | OCI | Cloud-Native  
-*Certification:* OCI Kubernetes Specialist (In Progress)
-
----
-
-## 🏆 Achievements & Certifications
-
-- 🎯 *24-Hour Hackathon* - VoIP Call Tracing (August 2025)
-- ☁ *Oracle Cloud Infrastructure* - Kubernetes Engine Specialist (Preparing)
-- 💻 *Open Source Contributions* - Multiple GitHub projects
-- 🤖 *Robotics Competitions* - ROS navigation challenges
+Tech Stack: Kubernetes, Docker, OCI
+Status: OCI Certification In Progress
 
 ---
 
-## 💻 Technical Skills
+## Achievements & Certifications
 
-### Programming Languages
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=java&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Embedded C](https://img.shields.io/badge/Embedded_C-00599C?style=flat-square&logo=c&logoColor=white)
+Certifications:
+- Commercial Project Manager - Siemens (Certified Internship)
+- NSS 7-Day Unit Camp - Government Certified
+- Oracle Cloud Infrastructure - Kubernetes Specialist (In Progress)
 
-### Technologies & Tools
-![ROS](https://img.shields.io/badge/ROS-22314E?style=flat-square&logo=ros&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+Competitions & Hackathons:
+- Smart India Hackathon (SIH) - Selected (2025)
+- e-Yantra Robotics - Team Captain (IIT Bombay, Ongoing)
+- DDC Aerothon - National Level (Bangalore, 2024)
+- SEAIndia DDC RC Plane - National Level (Chennai, 2024)
+- IIT Bombay Techfest - Aeromodelling Competition (2024)
+- 24-Hour Hackathon - VoIP Tracing (August 2025)
+- Navothena Hackathon - Participant (Raipur, 2025)
 
----
-
-## 🌟 Getting Started
-
-Want to run this portfolio locally? Follow these steps:
-
-### Prerequisites
-- Web browser (Chrome/Firefox recommended)
-- Text editor (VS Code recommended)
-- Git installed
-
-### Installation
-
-1. *Clone the repository*
-2. *Navigate to the project folder*
-3. *Open in browser*
-- Simply double-click index.html
-- Or use VS Code Live Server extension
-- Or open with browser: start index.html (Windows) or open index.html (Mac)
+Leadership & Clubs:
+- Robotronics Club - Co-Founder
+- Aero Club - Active Member
+- NSS - Design Team Member (Government Certified)
+- Pratyaksh Dramatic Club - Member
 
 ---
 
-## 🎨 Customization Guide
+## Technical Skills
 
-### Change Color Theme
+Programming Languages:
+C/C++, Python, Java, JavaScript, Embedded C, HTML/CSS
 
-Edit the CSS variables in style.css:
-### Update Content
+Robotics & Hardware:
+ROS/ROS2, Arduino, Microcontrollers, Drones, RC Planes, IoT Systems, AVR Programming, Sensor Integration
 
-1. *Personal Info:* Edit name, title, bio in index.html
-2. *Profile Picture:* Replace images/your-photo.jpg
-3. *Projects:* Update project sections with your work
-4. *Contact:* Add your email, LinkedIn, GitHub links
+AI/ML & Data Science:
+Machine Learning, Data Analysis, Python Libraries, Predictive Models
 
-### Adjust Animations
+Web Development:
+Frontend Development, Backend Development, Full Stack, Responsive Design
 
-Modify animation speeds in style.css:
+Cloud & DevOps:
+Kubernetes, Docker, Oracle Cloud Infrastructure, Git/GitHub, CI/CD Basics
 
----
+Design Tools:
+Graphic Design, T-shirt Design, UI/UX Basics, Branding
 
-## 📬 Contact & Connect
-
-Let's connect and collaborate on exciting projects!
-
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/anshika01-agrawal)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
-
-*Portfolio:* [anshika01-agrawal.github.io/My-portfolio](https://anshika01-agrawal.github.io/My-portfolio/)
+Soft Skills:
+Team Leadership, Project Management, Communication, Problem Solving, Time Management, Teamwork
 
 ---
 
-## 🤝 Contributing
+## Deployment to GitHub Pages
 
-Contributions, issues, and feature requests are welcome!
+Step 1: Push Code to GitHub
+git add .
+git commit -m "Initial commit"
+git push origin main
 
-1. Fork the Project
-2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
-3. Commit your Changes (git commit -m 'Add some AmazingFeature')
-4. Push to the Branch (git push origin feature/AmazingFeature)
-5. Open a Pull Request
+Step 2: Enable GitHub Pages
+1. Go to your repository on GitHub
+2. Click on "Settings" tab
+3. Scroll down and click "Pages" in left sidebar
+4. Under "Source", select "main" branch
+5. Select "/ (root)" folder
+6. Click "Save"
+
+Step 3: Access Your Live Site
+Your portfolio will be live at:
+https://anshika01-agrawal.github.io/My-portfolio/
+
+Wait 2-3 minutes for deployment to complete!
 
 ---
 
-## 📝 License
+## Contact & Connect
 
-This project is open source and available under the MIT License.
+GitHub: https://github.com/anshika01-agrawal
+LinkedIn: https://linkedin.com/in/yourprofile
+Email: your.email@example.com
+
+Portfolio: https://anshika01-agrawal.github.io/My-portfolio/
+
+Location: IET-DAVV, Indore, Madhya Pradesh
+Education: 3rd Year - Electronics & Telecommunication Engineering
 
 ---
 
-## 🙏 Acknowledgments
+## Contributing
 
-*Special Thanks To:*
-- [Particles.js](https://vincentgarreau.com/particles.js/) - Amazing particle effects library
-- [Font Awesome](https://fontawesome.com/) - Comprehensive icon library
-- [Google Fonts](https://fonts.google.com/) - Beautiful typography
-- [GitHub Pages](https://pages.github.com/) - Free hosting platform
+Want to contribute? Follow these steps:
 
-*Inspired By:*
-- Ocean depths and marine life 🌊
+1. Fork the Project on GitHub
+2. Clone your fork: git clone https://github.com/YOUR-USERNAME/My-portfolio.git
+3. Create Feature Branch: git checkout -b feature/AmazingFeature
+4. Make your changes
+5. Commit Changes: git commit -m 'Add some AmazingFeature'
+6. Push to Branch: git push origin feature/AmazingFeature
+7. Open a Pull Request on GitHub
+
+---
+
+## License
+
+MIT License
+
+Copyright (c) 2025 Anshika Agrawal
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+---
+
+## Acknowledgments
+
+Special Thanks To:
+- Particles.js - Amazing particle effects library
+- Font Awesome - Comprehensive icon library
+- Google Fonts - Beautiful typography
+- GitHub Pages - Free hosting platform
+- IET-DAVV Indore - My college community
+- All my clubs - Aero Club, Robotronics, NSS, Pratyaksh
+- Competition organizers - IIT Bombay, DDC, SIH, SEAIndia
+
+Inspired By:
+- Ocean depths and marine life
 - Modern web design trends
 - Glass morphism aesthetics
 - Neon cyberpunk themes
+- Space and technology exploration
 
 ---
 
-## 📊 GitHub Stats
+## Repository Stats
 
-![Repository Size](https://img.shields.io/github/repo-size/anshika01-agrawal/My-portfolio)
-![Last Commit](https://img.shields.io/github/last-commit/anshika01-agrawal/My-portfolio)
-![Languages](https://img.shields.io/github/languages/count/anshika01-agrawal/My-portfolio)
+Repository Size: Check on GitHub
+Last Commit: Check on GitHub
+Languages Used: HTML, CSS, JavaScript
+Stars: Give it a star if you like it!
 
 ---
 
-## 🎓 Learning Journey
+## Learning Journey
 
-This portfolio represents my journey in:
-- Advanced CSS animations and transitions
-- JavaScript DOM manipulation
+This portfolio represents my growth in:
+- Advanced CSS animations and Glass Morphism
+- JavaScript DOM manipulation and events
 - Responsive web design principles
 - Git version control workflows
 - Modern UI/UX design patterns
 - Performance optimization techniques
+- Professional documentation writing
+- Project management and organization
 
 ---
 
-<div align="center">
+## Future Enhancements
 
-### 🌊 Dive into the Ocean of Technology 🌊
+Planned Features:
+- Dark/Light mode toggle switch
+- Blog section for technical articles
+- Project demo videos and GIFs
+- Interactive skills visualization graph
+- Download resume button (PDF)
+- Testimonials and recommendations section
+- Achievement badges with animations
+- 3D effects and advanced interactions
+- Multilingual support (Hindi/English)
+- Analytics integration
+- PWA capabilities
+- Accessibility improvements
 
-*Made with 💙 by Anshika Agrawal*
+---
 
-If you like this project, please give it a ⭐!
+## Troubleshooting
 
-[⬆ Back to Top](#-underwater-portfolio)
+Common Issues and Solutions:
+
+Issue 1: Particles not working
+Solution: Check if particles.js CDN is loaded in index.html. Open browser console (F12) to check for errors.
+
+Issue 2: Styles not applying
+Solution: Clear browser cache (Ctrl + Shift + R). Check if style.css path is correct. Verify CSS syntax.
+
+Issue 3: GitHub Pages not updating
+Solution: Wait 5-10 minutes after pushing. Check repository Settings → Pages. Clear browser cache. Try incognito mode.
+
+Issue 4: Images not showing
+Solution: Check image file paths in HTML. Verify image file extensions. Check if images are in correct folder.
+
+---
+
+## Performance Tips
+
+Optimize Your Portfolio:
+
+1. Images:
+- Compress images before uploading
+- Use modern formats like WebP
+- Add proper alt text for accessibility
+
+2. Code:
+- Minify CSS and JavaScript for production
+- Remove unused code and comments
+- Use lazy loading for images
+
+3. Hosting:
+- Enable GitHub Pages caching
+- Use CDN for external libraries
+- Optimize loading order of scripts
+
+---
+
+## Browser Support
+
+Tested and Working On:
+- Chrome (Latest version)
+- Firefox (Latest version)
+- Safari (Latest version)
+- Microsoft Edge (Latest version)
+- Opera (Latest version)
+- Mobile browsers (iOS Safari, Chrome Mobile)
+
+---
+
+## Showcase Your Portfolio
+
+Use This Portfolio For:
+- Job applications and internships
+- College projects and assignments
+- Freelance work proposals
+- Professional networking
+- Competition submissions
+- Email signatures
+- LinkedIn profile link
+- Resume/CV attachment
+
+---
+
+Dive into the Ocean of Technology
+
+Made with love by Anshika Agrawal
+
+Electronics & Telecommunication Engineering Student
+IET-DAVV Indore | GSSOC'25 Contributor | Robotics Enthusiast | AI/ML Developer
+
+If you like this project, please give it a star!
+
+Copyright 2025 Anshika Agrawal. All Rights Reserved.
+
