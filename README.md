@@ -59,15 +59,15 @@ Hi! I'm **Anshika Agrawal**, a 3rd-year **Electronics & Telecommunication Engine
 ---
 
 ## 📂 Project Structure
-My-portfolio/
-│
-├── index.html          # Main HTML file
-├── style.css           # Styling with animations
-├── script.js           # JavaScript functionality
-├── README.md           # Documentation
-│
-└── images/             # Images folder
-└── your-photo.jpg  # Profile picture
+**File Descriptions:**
+
+| File | Description |
+|------|-------------|
+| index.html | Main HTML structure with all sections |
+| style.css | Complete styling with Glass Morphism & animations |
+| script.js | Particles.js configuration & interactive features |
+| README.md | Project documentation |
+| images/ | Folder for storing images (profile pics, etc.) |
 ---
 
 ## 🚀 Getting Started
