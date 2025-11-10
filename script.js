@@ -4,6 +4,7 @@ class ParallaxEffect {
         this.layers = document.querySelectorAll('.parallax-layer');
         this.shapes = document.querySelectorAll('.shape');
         this.sections = document.querySelectorAll('section');
+        this.journeyImages = document.querySelectorAll('.parallax-image');
         this.init();
     }
 
@@ -30,6 +31,20 @@ class ParallaxEffect {
             const xPos = (scrolled * speed * 0.5) * (index % 2 === 0 ? -1 : 1);
             
             shape.style.transform = `translate(${xPos}px, ${yPos}px) rotate(${scrolled * 0.05}deg)`;
+        });
+
+        // Journey images parallax effect
+        this.journeyImages.forEach((img) => {
+            const rect = img.getBoundingClientRect();
+            const speed = parseFloat(img.dataset.speed) || 0.5;
+            
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+                const yPos = (window.innerHeight - rect.top) * speed * 0.1;
+                const placeholder = img.querySelector('.image-placeholder');
+                if (placeholder) {
+                    placeholder.style.transform = `translateY(${-yPos}px) scale(1.1)`;
+                }
+            }
         });
 
         // Add depth effect to sections
