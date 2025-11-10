@@ -266,6 +266,162 @@ body {
     50% { transform: translate(-55px, 40px) rotate(180deg); }
 }
 
+/* ==================== ALTERNATIVE BACKGROUND PATTERNS ==================== */
+/* You can replace the parallax-bg div content with any of these patterns */
+
+/* Option 1: Dot Pattern (Current - subtle dots) */
+.bg-pattern-dots {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    background-image: radial-gradient(circle, rgba(168, 85, 247, 0.15) 1px, transparent 1px);
+    background-size: 30px 30px;
+    pointer-events: none;
+}
+
+/* Option 2: Grid Pattern - Modern tech look */
+.bg-pattern-grid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    background-image: 
+        linear-gradient(rgba(168, 85, 247, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(168, 85, 247, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+    animation: gridMove 20s linear infinite;
+}
+
+@keyframes gridMove {
+    0% { background-position: 0 0, 0 0; }
+    100% { background-position: 50px 50px, 50px 50px; }
+}
+
+/* Option 3: Hexagon Pattern - Futuristic look */
+.bg-pattern-hexagon {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    background-image: 
+        radial-gradient(circle at 0% 50%, rgba(168, 85, 247, 0.12) 10%, transparent 10%),
+        radial-gradient(circle at 100% 50%, rgba(236, 72, 153, 0.12) 10%, transparent 10%);
+    background-size: 80px 140px;
+    background-position: 0 0, 40px 70px;
+    pointer-events: none;
+}
+
+/* Option 4: Circuit Board Pattern - Tech theme */
+.bg-pattern-circuit {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    background-image:
+        linear-gradient(90deg, rgba(168, 85, 247, 0.05) 1px, transparent 1px),
+        linear-gradient(rgba(168, 85, 247, 0.05) 1px, transparent 1px),
+        radial-gradient(circle, rgba(6, 182, 212, 0.2) 2px, transparent 2px);
+    background-size: 40px 40px, 40px 40px, 80px 80px;
+    background-position: 0 0, 0 0, 0 0;
+    pointer-events: none;
+    animation: circuitPulse 10s ease-in-out infinite;
+}
+
+@keyframes circuitPulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.6; }
+}
+
+/* Option 5: Wave Pattern - Flowing design */
+.bg-pattern-waves {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    background-image: 
+        repeating-linear-gradient(
+            -45deg,
+            transparent,
+            transparent 20px,
+            rgba(168, 85, 247, 0.05) 20px,
+            rgba(168, 85, 247, 0.05) 40px
+        ),
+        repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 20px,
+            rgba(6, 182, 212, 0.05) 20px,
+            rgba(6, 182, 212, 0.05) 40px
+        );
+    pointer-events: none;
+    animation: waveMove 15s linear infinite;
+}
+
+@keyframes waveMove {
+    0% { background-position: 0 0, 0 0; }
+    100% { background-position: 100px 100px, -100px -100px; }
+}
+
+/* Option 6: Matrix Rain Effect - Cyber theme */
+.bg-pattern-matrix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    background-image: 
+        linear-gradient(to bottom, 
+            transparent 0%, 
+            rgba(168, 85, 247, 0.1) 50%, 
+            transparent 100%
+        );
+    background-size: 2px 100px;
+    background-position: 0 0;
+    pointer-events: none;
+    animation: matrixRain 3s linear infinite;
+}
+
+@keyframes matrixRain {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 100px; }
+}
+
+/* Option 7: Constellation Pattern - Space theme */
+.bg-pattern-constellation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    background-image: 
+        radial-gradient(circle, rgba(255, 255, 255, 0.3) 1px, transparent 1px),
+        radial-gradient(circle, rgba(168, 85, 247, 0.2) 1px, transparent 1px),
+        radial-gradient(circle, rgba(6, 182, 212, 0.2) 1px, transparent 1px);
+    background-size: 100px 100px, 150px 150px, 200px 200px;
+    background-position: 0 0, 50px 50px, 100px 100px;
+    pointer-events: none;
+    animation: twinkle 5s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 0.8; }
+}
+
 /* ==================== HEADER & NAVIGATION ==================== */
 header {
     position: fixed;
@@ -1133,8 +1289,8 @@ section {
 }
 
 .college-bg-2 {
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.8), rgba(6, 182, 212, 0.8)),
-                url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80');
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.7), rgba(16, 185, 129, 0.7)),
+                url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&q=80');
     background-size: cover;
     background-position: center;
 }

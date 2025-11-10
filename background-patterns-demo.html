@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Patterns Preview - Choose Your Favorite!</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background: #0a0e27;
+            color: white;
+            padding: 2rem;
+        }
+
+        .demo-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, #a855f7, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #94a3b8;
+            font-size: 1.1rem;
+        }
+
+        .patterns-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .pattern-card {
+            background: rgba(20, 24, 41, 0.7);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(168, 85, 247, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pattern-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 40px rgba(168, 85, 247, 0.3);
+        }
+
+        .pattern-preview {
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+            background: #0a0e27;
+        }
+
+        .pattern-info {
+            padding: 1.5rem;
+        }
+
+        .pattern-info h3 {
+            color: #a855f7;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .pattern-info p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .use-tag {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.4rem 1rem;
+            background: rgba(168, 85, 247, 0.2);
+            border: 1px solid rgba(168, 85, 247, 0.4);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #a855f7;
+        }
+
+        .instructions {
+            background: rgba(168, 85, 247, 0.1);
+            border: 1px solid rgba(168, 85, 247, 0.3);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .instructions h2 {
+            color: #a855f7;
+            margin-bottom: 1rem;
+        }
+
+        .instructions code {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            color: #06b6d4;
+            font-family: 'Courier New', monospace;
+        }
+
+        .instructions ol {
+            margin-left: 1.5rem;
+            margin-top: 1rem;
+            color: #94a3b8;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .patterns-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <h1>🎨 Background Pattern Options</h1>
+        <p class="intro">
+            Choose your favorite background pattern! All patterns are already in your style.css file.<br>
+            Scroll down to see how to apply them to your portfolio.
+        </p>
+
+        <div class="patterns-grid">
+            <!-- Pattern 1: Dots -->
+            <div class="pattern-card">
+                <div class="pattern-preview">
+                    <div class="bg-pattern-dots" style="position: absolute; width: 100%; height: 100%;"></div>
+                </div>
+                <div class="pattern-info">
+                    <h3>1. Dot Pattern</h3>
+                    <p>Subtle dots creating a minimal and clean look. Perfect for a professional portfolio with a modern touch.</p>
+                    <span class="use-tag">bg-pattern-dots</span>
+                </div>
+            </div>
+
+            <!-- Pattern 2: Grid -->
+            <div class="pattern-card">
+                <div class="pattern-preview">
+                    <div class="bg-pattern-grid" style="position: absolute; width: 100%; height: 100%;"></div>
+                </div>
+                <div class="pattern-info">
+                    <h3>2. Grid Pattern (Animated)</h3>
+                    <p>Animated grid that moves slowly. Great for tech-focused portfolios with a structured, organized feel.</p>
+                    <span class="use-tag">bg-pattern-grid</span>
+                </div>
+            </div>
+
+            <!-- Pattern 3: Hexagon -->
+            <div class="pattern-card">
+                <div class="pattern-preview">
+                    <div class="bg-pattern-hexagon" style="position: absolute; width: 100%; height: 100%;"></div>
+                </div>
+                <div class="pattern-info">
+                    <h3>3. Hexagon Pattern</h3>
+                    <p>Futuristic hexagonal design. Perfect for sci-fi or innovation-focused portfolios.</p>
+                    <span class="use-tag">bg-pattern-hexagon</span>
+                </div>
+            </div>
+
+            <!-- Pattern 4: Circuit -->
+            <div class="pattern-card">
+                <div class="pattern-preview">
+                    <div class="bg-pattern-circuit" style="position: absolute; width: 100%; height: 100%;"></div>
+                </div>
+                <div class="pattern-info">
+                    <h3>4. Circuit Board (Pulsing)</h3>
+                    <p>Tech-inspired circuit board with pulsing animation. Ideal for electronics/engineering portfolios.</p>
+                    <span class="use-tag">bg-pattern-circuit</span>
+                </div>
+            </div>
+
+            <!-- Pattern 5: Waves -->
+            <div class="pattern-card">
+                <div class="pattern-preview">
+                    <div class="bg-pattern-waves" style="position: absolute; width: 100%; height: 100%;"></div>
+                </div>
+                <div class="pattern-info">
+                    <h3>5. Wave Pattern (Animated)</h3>
+                    <p>Flowing diagonal waves that move continuously. Great for creative and dynamic portfolios.</p>
+                    <span class="use-tag">bg-pattern-waves</span>
+                </div>
+            </div>
+
+            <!-- Pattern 6: Matrix -->
+            <div class="pattern-card">
+                <div class="pattern-preview">
+                    <div class="bg-pattern-matrix" style="position: absolute; width: 100%; height: 100%;"></div>
+                </div>
+                <div class="pattern-info">
+                    <h3>6. Matrix Rain</h3>
+                    <p>Cyber-themed matrix rain effect. Perfect for a hacker/cybersecurity aesthetic.</p>
+                    <span class="use-tag">bg-pattern-matrix</span>
+                </div>
+            </div>
+
+            <!-- Pattern 7: Constellation -->
+            <div class="pattern-card">
+                <div class="pattern-preview">
+                    <div class="bg-pattern-constellation" style="position: absolute; width: 100%; height: 100%;"></div>
+                </div>
+                <div class="pattern-info">
+                    <h3>7. Constellation (Twinkling)</h3>
+                    <p>Space-themed twinkling stars. Ideal for astronomy or dreamy, creative portfolios.</p>
+                    <span class="use-tag">bg-pattern-constellation</span>
+                </div>
+            </div>
+
+            <!-- Pattern 8: Current (Gradient Layers) -->
+            <div class="pattern-card">
+                <div class="pattern-preview">
+                    <div class="parallax-bg" style="position: absolute; width: 100%; height: 100%;">
+                        <div class="parallax-layer layer-1"></div>
+                        <div class="parallax-layer layer-2"></div>
+                        <div class="parallax-layer layer-3"></div>
+                        <div class="parallax-layer layer-4"></div>
+                    </div>
+                </div>
+                <div class="pattern-info">
+                    <h3>8. Current Design (Default)</h3>
+                    <p>Your current animated gradient layers with parallax scrolling. Beautiful and dynamic!</p>
+                    <span class="use-tag">parallax-bg (Current)</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instructions -->
+        <div class="instructions">
+            <h2>📝 How to Apply a Pattern</h2>
+            <ol>
+                <li>Open your <code>index.html</code> file</li>
+                <li>Find the <code>&lt;div class="parallax-bg"&gt;</code> section (around line 11-16)</li>
+                <li>Replace it with the pattern you want. For example, to use the Grid pattern:</li>
+            </ol>
+            <pre style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 8px; margin-top: 1rem; overflow-x: auto;">
+<code style="color: #06b6d4; font-size: 0.9rem;"><!-- Replace this: -->
+&lt;div class="parallax-bg"&gt;
+    &lt;div class="parallax-layer layer-1"&gt;&lt;/div&gt;
+    &lt;div class="parallax-layer layer-2"&gt;&lt;/div&gt;
+    &lt;div class="parallax-layer layer-3"&gt;&lt;/div&gt;
+    &lt;div class="parallax-layer layer-4"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+<!-- With this: -->
+&lt;div class="bg-pattern-grid"&gt;&lt;/div&gt;
+
+<!-- Or mix multiple patterns: -->
+&lt;div class="bg-pattern-dots"&gt;&lt;/div&gt;
+&lt;div class="bg-pattern-circuit"&gt;&lt;/div&gt;</code></pre>
+
+            <p style="margin-top: 1.5rem; color: #94a3b8;">
+                <strong>💡 Pro Tip:</strong> You can also combine patterns by using multiple divs! 
+                Try layering dots with constellation for a unique look.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
