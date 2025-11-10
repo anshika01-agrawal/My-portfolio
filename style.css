@@ -9,17 +9,17 @@
 }
 
 :root {
-    /* Color Palette - Light Theme */
-    --primary-bg: #f8fafc;
-    --secondary-bg: #ffffff;
-    --accent-purple: #8b5cf6;
-    --accent-pink: #ec4899;
-    --accent-blue: #3b82f6;
-    --accent-cyan: #06b6d4;
-    --accent-green: #10b981;
-    --text-primary: #1e293b;
-    --text-secondary: #475569;
-    --text-muted: #64748b;
+    /* Color Palette - Light Theme (Enhanced Contrast) */
+    --primary-bg: #ffffff;
+    --secondary-bg: #f8fafc;
+    --accent-purple: #7c3aed;
+    --accent-pink: #db2777;
+    --accent-blue: #2563eb;
+    --accent-cyan: #0891b2;
+    --accent-green: #059669;
+    --text-primary: #0f172a;
+    --text-secondary: #334155;
+    --text-muted: #475569;
     
     /* Gradient Colors */
     --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -29,8 +29,8 @@
     --gradient-main: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
     
     /* Glass Effect */
-    --glass-bg: rgba(255, 255, 255, 0.7);
-    --glass-border: rgba(139, 92, 246, 0.2);
+    --glass-bg: rgba(255, 255, 255, 0.9);
+    --glass-border: rgba(124, 58, 237, 0.3);
     
     /* Shadows - Light Theme */
     --shadow-sm: 0 2px 8px rgba(139, 92, 246, 0.1);
@@ -69,7 +69,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: -5;
-    background: linear-gradient(135deg, #f0f4ff 0%, #e0e7ff 50%, #f0f4ff 100%);
+    background: linear-gradient(135deg, #fefefe 0%, #f5f3ff 50%, #fefefe 100%);
 }
 
 .particles-overlay {
@@ -80,7 +80,7 @@ body {
     height: 100%;
     z-index: -4;
     pointer-events: none;
-    background: radial-gradient(circle at 50% 50%, transparent 0%, rgba(248, 250, 252, 0.5) 100%);
+    background: radial-gradient(circle at 50% 50%, transparent 0%, rgba(255, 255, 255, 0.3) 100%);
 }
 
 /* ==================== PARALLAX BACKGROUND LAYERS ==================== */
