@@ -9,17 +9,17 @@
 }
 
 :root {
-    /* Color Palette - Light Theme (Enhanced Contrast) */
-    --primary-bg: #ffffff;
-    --secondary-bg: #f8fafc;
-    --accent-purple: #7c3aed;
-    --accent-pink: #db2777;
-    --accent-blue: #2563eb;
-    --accent-cyan: #0891b2;
-    --accent-green: #059669;
-    --text-primary: #0f172a;
-    --text-secondary: #334155;
-    --text-muted: #475569;
+    /* Color Palette - Dark Theme (Original) */
+    --primary-bg: #0a0e27;
+    --secondary-bg: #141829;
+    --accent-purple: #a855f7;
+    --accent-pink: #ec4899;
+    --accent-blue: #3b82f6;
+    --accent-cyan: #06b6d4;
+    --accent-green: #10b981;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
     
     /* Gradient Colors */
     --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -29,14 +29,14 @@
     --gradient-main: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
     
     /* Glass Effect */
-    --glass-bg: rgba(255, 255, 255, 0.9);
-    --glass-border: rgba(124, 58, 237, 0.3);
+    --glass-bg: rgba(20, 24, 41, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.1);
     
-    /* Shadows - Light Theme */
-    --shadow-sm: 0 2px 8px rgba(139, 92, 246, 0.1);
-    --shadow-md: 0 4px 16px rgba(139, 92, 246, 0.15);
-    --shadow-lg: 0 8px 32px rgba(139, 92, 246, 0.2);
-    --shadow-glow: 0 0 20px rgba(139, 92, 246, 0.3);
+    /* Shadows - Dark Theme */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.2);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.3);
+    --shadow-glow: 0 0 20px rgba(168, 85, 247, 0.4);
     
     /* Spacing */
     --spacing-xs: 0.5rem;
@@ -69,7 +69,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: -5;
-    background: linear-gradient(135deg, #fefefe 0%, #f5f3ff 50%, #fefefe 100%);
+    background: linear-gradient(135deg, #0a0e27 0%, #1a1054 50%, #0a0e27 100%);
 }
 
 .particles-overlay {
@@ -80,7 +80,7 @@ body {
     height: 100%;
     z-index: -4;
     pointer-events: none;
-    background: radial-gradient(circle at 50% 50%, transparent 0%, rgba(255, 255, 255, 0.3) 100%);
+    background: radial-gradient(circle at 50% 50%, transparent 0%, rgba(10, 14, 39, 0.8) 100%);
 }
 
 /* ==================== PARALLAX BACKGROUND LAYERS ==================== */
@@ -99,27 +99,27 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle, rgba(139, 92, 246, 0.08) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(168, 85, 247, 0.05) 0%, transparent 70%);
     will-change: transform;
 }
 
 .layer-1 {
-    background: radial-gradient(circle at 20% 30%, rgba(139, 92, 246, 0.12) 0%, transparent 40%);
+    background: radial-gradient(circle at 20% 30%, rgba(168, 85, 247, 0.08) 0%, transparent 40%);
     animation: parallaxFloat1 20s ease-in-out infinite;
 }
 
 .layer-2 {
-    background: radial-gradient(circle at 80% 50%, rgba(236, 72, 153, 0.10) 0%, transparent 45%);
+    background: radial-gradient(circle at 80% 50%, rgba(236, 72, 153, 0.06) 0%, transparent 45%);
     animation: parallaxFloat2 25s ease-in-out infinite;
 }
 
 .layer-3 {
-    background: radial-gradient(circle at 50% 70%, rgba(6, 182, 212, 0.12) 0%, transparent 50%);
+    background: radial-gradient(circle at 50% 70%, rgba(6, 182, 212, 0.07) 0%, transparent 50%);
     animation: parallaxFloat3 30s ease-in-out infinite;
 }
 
 .layer-4 {
-    background: radial-gradient(circle at 30% 80%, rgba(59, 130, 246, 0.10) 0%, transparent 55%);
+    background: radial-gradient(circle at 30% 80%, rgba(59, 130, 246, 0.05) 0%, transparent 55%);
     animation: parallaxFloat4 35s ease-in-out infinite;
 }
 
@@ -158,7 +158,7 @@ body {
 
 .shape {
     position: absolute;
-    opacity: 0.25;
+    opacity: 0.15;
     will-change: transform;
 }
 
@@ -166,7 +166,7 @@ body {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background: linear-gradient(135deg, rgba(139, 92, 246, 0.4), rgba(236, 72, 153, 0.4));
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.3), rgba(236, 72, 153, 0.3));
     top: 10%;
     left: 5%;
     animation: floatShape1 25s ease-in-out infinite;
@@ -178,7 +178,7 @@ body {
     height: 0;
     border-left: 150px solid transparent;
     border-right: 150px solid transparent;
-    border-bottom: 260px solid rgba(6, 182, 212, 0.35);
+    border-bottom: 260px solid rgba(6, 182, 212, 0.25);
     top: 60%;
     right: 10%;
     animation: floatShape2 30s ease-in-out infinite;
@@ -188,7 +188,7 @@ body {
 .shape-square {
     width: 200px;
     height: 200px;
-    background: linear-gradient(45deg, rgba(59, 130, 246, 0.35), rgba(16, 185, 129, 0.35));
+    background: linear-gradient(45deg, rgba(59, 130, 246, 0.25), rgba(16, 185, 129, 0.25));
     top: 30%;
     right: 20%;
     animation: floatShape3 20s ease-in-out infinite;
@@ -199,7 +199,7 @@ body {
 .shape-hexagon {
     width: 180px;
     height: 100px;
-    background: rgba(236, 72, 153, 0.3);
+    background: rgba(236, 72, 153, 0.2);
     position: absolute;
     top: 75%;
     left: 25%;
@@ -212,7 +212,7 @@ body {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.3), rgba(6, 182, 212, 0.3));
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(6, 182, 212, 0.2));
     bottom: 15%;
     right: 5%;
     animation: floatShape5 28s ease-in-out infinite;
@@ -224,7 +224,7 @@ body {
     height: 0;
     border-left: 120px solid transparent;
     border-right: 120px solid transparent;
-    border-bottom: 210px solid rgba(139, 92, 246, 0.3);
+    border-bottom: 210px solid rgba(168, 85, 247, 0.2);
     top: 45%;
     left: 15%;
     animation: floatShape6 32s ease-in-out infinite;
@@ -277,7 +277,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: -3;
-    background-image: radial-gradient(circle, rgba(139, 92, 246, 0.25) 1px, transparent 1px);
+    background-image: radial-gradient(circle, rgba(168, 85, 247, 0.15) 1px, transparent 1px);
     background-size: 30px 30px;
     pointer-events: none;
 }
@@ -291,8 +291,8 @@ body {
     height: 100%;
     z-index: -3;
     background-image: 
-        linear-gradient(rgba(139, 92, 246, 0.15) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(139, 92, 246, 0.15) 1px, transparent 1px);
+        linear-gradient(rgba(168, 85, 247, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(168, 85, 247, 0.1) 1px, transparent 1px);
     background-size: 50px 50px;
     pointer-events: none;
     animation: gridMove 20s linear infinite;
@@ -429,14 +429,14 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(10, 14, 39, 0.8);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--glass-border);
     transition: all 0.3s ease;
 }
 
 header.scrolled {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(10, 14, 39, 0.95);
     box-shadow: var(--shadow-lg);
 }
 
