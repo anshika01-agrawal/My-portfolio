@@ -1,3 +1,54 @@
+// ==================== PARALLAX SCROLL EFFECT ====================
+class ParallaxEffect {
+    constructor() {
+        this.layers = document.querySelectorAll('.parallax-layer');
+        this.shapes = document.querySelectorAll('.shape');
+        this.sections = document.querySelectorAll('section');
+        this.init();
+    }
+
+    init() {
+        window.addEventListener('scroll', () => this.handleScroll());
+        this.handleScroll(); // Initial call
+    }
+
+    handleScroll() {
+        const scrolled = window.pageYOffset;
+        
+        // Parallax layers move at different speeds
+        this.layers.forEach((layer, index) => {
+            const speed = (index + 1) * 0.05;
+            const yPos = -(scrolled * speed);
+            layer.style.transform = `translateY(${yPos}px)`;
+        });
+
+        // Shapes move at different speeds and directions
+        this.shapes.forEach((shape, index) => {
+            const speed = 0.1 + (index * 0.03);
+            const direction = index % 2 === 0 ? 1 : -1;
+            const yPos = scrolled * speed * direction;
+            const xPos = (scrolled * speed * 0.5) * (index % 2 === 0 ? -1 : 1);
+            
+            shape.style.transform = `translate(${xPos}px, ${yPos}px) rotate(${scrolled * 0.05}deg)`;
+        });
+
+        // Add depth effect to sections
+        this.sections.forEach((section, index) => {
+            const rect = section.getBoundingClientRect();
+            const centerY = window.innerHeight / 2;
+            const sectionCenter = rect.top + rect.height / 2;
+            const distance = Math.abs(centerY - sectionCenter);
+            const maxDistance = window.innerHeight;
+            const scale = 1 - (distance / maxDistance) * 0.05;
+            
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+                section.style.transform = `scale(${scale})`;
+                section.style.opacity = scale;
+            }
+        });
+    }
+}
+
 // ==================== ANIMATED GRADIENT BACKGROUND (Similar to Techfest.org) ====================
 class GradientAnimation {
     constructor() {
@@ -47,8 +98,34 @@ class GradientAnimation {
     }
 
     drawGradient() {
-        // Create animated gradient background
-        const gradient = this.ctx.createRadialGradient(
+        // Create animated gradient background with depth
+        const time = Date.now() * 0.0001;
+        
+        // Multiple gradient layers for depth effect
+        const gradient1 = this.ctx.createRadialGradient(
+            this.canvas.width * 0.3 + Math.sin(time) * 100, 
+            this.canvas.height * 0.3 + Math.cos(time) * 100, 
+            0, 
+            this.canvas.width * 0.3, 
+            this.canvas.height * 0.3, 
+            this.canvas.width * 0.6
+        );
+        gradient1.addColorStop(0, 'rgba(168, 85, 247, 0.1)');
+        gradient1.addColorStop(1, 'transparent');
+        
+        const gradient2 = this.ctx.createRadialGradient(
+            this.canvas.width * 0.7 + Math.cos(time * 0.8) * 150, 
+            this.canvas.height * 0.6 + Math.sin(time * 0.8) * 150, 
+            0, 
+            this.canvas.width * 0.7, 
+            this.canvas.height * 0.6, 
+            this.canvas.width * 0.5
+        );
+        gradient2.addColorStop(0, 'rgba(236, 72, 153, 0.08)');
+        gradient2.addColorStop(1, 'transparent');
+        
+        // Base gradient
+        const baseGradient = this.ctx.createRadialGradient(
             this.canvas.width / 2, 
             this.canvas.height / 2, 
             0, 
@@ -56,12 +133,19 @@ class GradientAnimation {
             this.canvas.height / 2, 
             this.canvas.width / 2
         );
+        baseGradient.addColorStop(0, '#0a0e27');
+        baseGradient.addColorStop(0.5, '#1a1054');
+        baseGradient.addColorStop(1, '#0a0e27');
         
-        gradient.addColorStop(0, '#0a0e27');
-        gradient.addColorStop(0.5, '#1a1054');
-        gradient.addColorStop(1, '#0a0e27');
+        // Draw base
+        this.ctx.fillStyle = baseGradient;
+        this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
         
-        this.ctx.fillStyle = gradient;
+        // Draw animated gradients
+        this.ctx.fillStyle = gradient1;
+        this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+        
+        this.ctx.fillStyle = gradient2;
         this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
     }
 
@@ -426,6 +510,9 @@ class CursorTrail {
 
 // ==================== INITIALIZE ALL ON DOM LOAD ====================
 document.addEventListener('DOMContentLoaded', () => {
+    // Initialize parallax effect
+    new ParallaxEffect();
+    
     // Initialize animated gradient background
     new GradientAnimation();
     
